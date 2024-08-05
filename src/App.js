@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Home from './Home';
+import Create from './Create';
 import {BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 
@@ -11,6 +12,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={ <Home /> } />
+            <Route path="/create" element={ <Create /> } />
           </Routes>
         </div>
       </div>
